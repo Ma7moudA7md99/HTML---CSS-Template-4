@@ -1,6 +1,7 @@
 /* variables */
 :root {
   --back-color: #f1f5f9;
+  --main-color: #0075ff;
 }
 * {
   margin: 0;
@@ -15,13 +16,19 @@ ul {
 body {
   font-family: "Noto Serif", serif;
   background-color: var(--back-color);
-  width: 80%;
+  width: 85%;
   direction: rtl;
+  overflow-x: hidden;
 }
+/* global classes */
+.active {
+  background-color: #f6f6f6;
+}
+/* gg */
 /* start main (aside) */
 aside.main {
   background-color: white;
-  width: 20%;
+  width: 15%;
   height: 100%;
   position: fixed;
   top: 0;
@@ -37,6 +44,7 @@ aside.main .title {
   text-transform: capitalize;
   position: relative;
   border-bottom: 2px solid black;
+  color: var(--main-color);
 }
 aside.main .title::after {
   content: "";
@@ -80,7 +88,7 @@ aside.main .links span:hover {
 }
 .top-bar .icons img {
   width: 50px;
-  border: 1px solid black;
+  border: 1px solid var(--main-color);
   border-radius: 50%;
   cursor: pointer;
   margin: 10px;
@@ -100,7 +108,7 @@ aside.main .links span:hover {
   position: relative;
 }
 .top-bar .search input {
-  border: 1px solid #777;
+  border: 1px solid var(--main-color);
   border-radius: 10px;
   font-size: 18px;
   direction: ltr;
@@ -115,3 +123,80 @@ aside.main .links span:hover {
   color: #777;
 }
 /* end tob-bar */
+/* start dashboard */
+.dashboard {
+  margin: 30px 10px;
+}
+.grid-content {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
+  gap: 20px;
+}
+.grid-content .box {
+  background-color: white;
+  box-shadow: 0 0 5px 1px #0000004f;
+  border-radius: 20px;
+  position: relative;
+  text-align: right;
+  height: 350px;
+}
+.grid-content .box .back {
+  position: relative;
+}
+.grid-content .box .back h2,
+.grid-content .box .back p {
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  text-transform: capitalize;
+}
+.grid-content .box .back p {
+  top: 40%;
+  left: 10%;
+  color: #777;
+}
+.grid-content .box .back img {
+  width: 100%;
+  z-index: -11;
+  border-radius: 20px;
+}
+.grid-content .box .profile-img img {
+  width: 13%;
+  z-index: 33;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.grid-content .box .statistics {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(140px, 1fr));
+  gap: 8px;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px 0;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 2;
+}
+.grid-content .box .statistics div {
+  width: 100%;
+}
+.grid-content .box .statistics p {
+  color: #777;
+}
+.grid-content .box button {
+  padding: 5px 10px;
+  background-color: #0075ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 8%;
+  right: 5%;
+  cursor: pointer;
+}
+/* end dashboard */
