@@ -10,15 +10,15 @@
   direction: ltr;
   transition: 0.3s;
 }
-ul {
-  list-style: none;
-}
 body {
   font-family: "Noto Serif", serif;
   background-color: var(--back-color);
   width: 85%;
   direction: rtl;
   overflow-x: hidden;
+}
+ul {
+  list-style: none;
 }
 /* global classes */
 .active {
@@ -139,6 +139,7 @@ aside.main .links span:hover {
   position: relative;
   text-align: right;
   height: 350px;
+  direction: ltr;
 }
 .grid-content .box .back {
   position: relative;
@@ -198,5 +199,118 @@ aside.main .links span:hover {
   bottom: 8%;
   right: 5%;
   cursor: pointer;
+}
+.grid-content .quick-draft {
+  text-align: left;
+}
+.grid-content .quick-draft h2 {
+  text-transform: capitalize;
+  width: 100%;
+  margin: 10px 20px;
+}
+.grid-content .quick-draft p {
+  color: #777;
+  margin: 0 15px 15px;
+}
+.grid-content .quick-draft input,
+.grid-content .quick-draft textarea {
+  margin: 5px 10px;
+  width: 95%;
+  color: #777;
+  padding: 5px 10px;
+  max-width: 95%;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #eeeeee;
+}
+.grid-content .quick-draft textarea {
+  height: 150px;
+}
+.grid-content .yearly-targets {
+  text-align: left;
+}
+.grid-content .yearly-targets h2 {
+  margin: 10px 20px;
+  text-transform: capitalize;
+}
+.grid-content .yearly-targets div {
+  width: 95%;
+  margin: 15px 20px;
+  position: relative;
+}
+.grid-content .yearly-targets div p {
+  color: #777;
+  text-transform: capitalize;
+  position: absolute;
+  top: 10%;
+  left: 23%;
+}
+.grid-content .yearly-targets div p:nth-child(2) {
+  top: 45%;
+  color: black;
+}
+.grid-content .yearly-targets div div.icon {
+  margin: 0;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  align-self: center;
+  display: inline-block;
+}
+.grid-content .yearly-targets div.dollar div.icon {
+  background-color: #cce3ff;
+  color: var(--main-color);
+}
+.grid-content .yearly-targets div.dollar span.prog-holder {
+  background-color: #cce3ff;
+}
+.grid-content .yearly-targets div span.prog-holder span {
+  height: inherit;
+  display: block;
+  position: relative;
+}
+.grid-content .yearly-targets div span.prog-holder span::after {
+  content: attr(data-steps);
+  position: absolute;
+  background-color: inherit;
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: white;
+  top: -27px;
+  right: -13%;
+}
+.grid-content .yearly-targets div.dollar span.prog-holder span {
+  background-color: var(--main-color);
+}
+.grid-content .yearly-targets div.code div.icon {
+  background-color: #fdecce;
+  color: #f59e0b;
+}
+.grid-content .yearly-targets div.code span.prog-holder {
+  background-color: #fdecce;
+}
+.grid-content .yearly-targets div.code span.prog-holder span {
+  background-color: #f59e0b;
+  height: inherit;
+}
+.grid-content .yearly-targets div.user div.icon {
+  background-color: #d3f3df;
+  color: #22c55e;
+}
+.grid-content .yearly-targets div.user span.prog-holder {
+  background-color: #d3f3df;
+}
+.grid-content .yearly-targets div.user span.prog-holder span {
+  background-color: #22c55e;
+}
+.grid-content .yearly-targets div div.icon i {
+  font-size: 22px;
+  transform: translateY(120%);
+}
+.grid-content .yearly-targets div span.prog-holder {
+  display: inline-block;
+  width: 75%;
+  height: 3px;
+  transform: translate(1%, 50px);
 }
 /* end dashboard */
