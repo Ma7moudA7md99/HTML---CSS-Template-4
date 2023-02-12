@@ -574,17 +574,17 @@
   width: 26%;
 }
 .table .tabled-content th.date {
-  width: 15%;
+  width: 13%;
 }
 .table .tabled-content th.client {
   width: 15%;
 }
 .table .tabled-content th.price {
-  width: 10%;
+  width: 9%;
 }
-/* .table .tabled-content th.status {
-  width: 15.7%;
-} */
+.table .tabled-content th.status {
+  width: 15%;
+}
 .table .tabled-content td {
   outline: 1px solid #eee;
   padding: 0 10px;
