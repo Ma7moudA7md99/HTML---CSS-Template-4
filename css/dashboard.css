@@ -571,10 +571,10 @@
   height: 50px;
 }
 .table .tabled-content th.name {
-  width: 26%;
+  width: 25%;
 }
 .table .tabled-content th.date {
-  width: 14%;
+  width: 13%;
 }
 .table .tabled-content th.client {
   width: 16%;
