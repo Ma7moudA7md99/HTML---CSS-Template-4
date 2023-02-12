@@ -200,6 +200,7 @@ aside.main .links span:hover {
   right: 5%;
   cursor: pointer;
 }
+/* start quick-draft */
 .grid-content .quick-draft {
   text-align: left;
 }
@@ -226,6 +227,8 @@ aside.main .links span:hover {
 .grid-content .quick-draft textarea {
   height: 150px;
 }
+/* end quick-draft */
+/* start yearly-targets */
 .grid-content .yearly-targets {
   text-align: left;
 }
@@ -313,4 +316,126 @@ aside.main .links span:hover {
   height: 3px;
   transform: translate(1%, 50px);
 }
+/* end yearly-targets */
+/* start tactical statistics */
+.grid-content .tactical {
+  text-align: left;
+}
+.grid-content .tactical h2 {
+  text-transform: capitalize;
+  margin: 10px 20px;
+}
+.grid-content .tactical p {
+  margin: 0 20px;
+  color: #777;
+  text-transform: capitalize;
+}
+.grid-content .tactical div {
+  width: 45%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px 5px;
+  text-align: center;
+}
+.grid-content .tactical div.one,
+.grid-content .tactical div.two {
+  margin-left: 13px;
+}
+.grid-content .tactical div i {
+  font-size: 25px;
+  margin: 10px;
+}
+.grid-content .tactical div i.fa-rectangle-list {
+  color: #f59e0b;
+}
+.grid-content .tactical div i.fa-spinner {
+  color: #0075ff;
+}
+.grid-content .tactical div i.fa-circle-check {
+  color: #22c55e;
+}
+.grid-content .tactical div i.fa-rectangle-xmark {
+  color: #f44336;
+}
+.grid-content .tactical div p {
+  font-size: 12px;
+  margin: 10px;
+}
+/* end tactical statistics */
+/* start news */
+.grid-content .news {
+  text-align: left;
+}
+.grid-content .news h2 {
+  text-transform: capitalize;
+  margin: 10px 20px;
+}
+.grid-content .news-container {
+  height: 20%;
+  margin: 6px 10px;
+  position: relative;
+  border-right: 1px solid #ccc;
+}
+.grid-content .news-container:last-child {
+  border-bottom: none;
+}
+.grid-content .news-container img {
+  height: 85%;
+  position: absolute;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.grid-content .news-container h5 {
+  margin: 5px 0;
+  font-size: 17px;
+}
+.grid-content .news-container p {
+  color: #777;
+  font-size: 12px;
+}
+.grid-content .news-container h5,
+.grid-content .news-container p {
+  margin-left: 110px;
+  text-transform: capitalize;
+}
+/* end news */
+/* start tasks */
+.grid-content .tasks {
+  text-align: left;
+}
+.grid-content .tasks h2 {
+  margin: 10px 20px;
+  text-transform: capitalize;
+}
+.grid-content .tasks div {
+  margin: 10px 20px;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  position: relative;
+}
+.grid-content .tasks div:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.grid-content .tasks div p {
+  color: #777;
+  font-size: 12px;
+}
+.grid-content .tasks div h4 {
+  margin-bottom: 5px;
+}
+.grid-content .tasks div i {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+.grid-content .tasks div.canceled {
+  text-decoration: line-through;
+  color: #b3b3b3;
+}
+.grid-content .tasks div.canceled p {
+  color: #e2e2e2;
+}
+/* end tasks */
 /* end dashboard */
