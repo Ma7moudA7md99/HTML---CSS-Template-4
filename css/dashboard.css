@@ -393,7 +393,7 @@
   height: 20px;
   border-radius: 50%;
   top: 50%;
-  left: -9%;
+  left: -15%;
   transform: translateY(-50%);
   cursor: pointer;
 }
@@ -405,7 +405,7 @@
   width: 23px;
   background-color: transparent;
   border: 3px solid var(--main-color);
-  left: -10.38%;
+  left: -16.38%;
 }
 /* end progress */
 /* start reminders (575) */
@@ -540,7 +540,7 @@
   color: #cce4f0;
 }
 .grid-content .social-media div img {
-  height: 90%;
+  height: 100%;
 }
 .grid-content .social-media div p {
   margin: 22px 20px;
@@ -571,7 +571,7 @@
   height: 50px;
 }
 .table .tabled-content th.name {
-  width: 25%;
+  width: 26%;
 }
 .table .tabled-content th.date {
   width: 15%;
