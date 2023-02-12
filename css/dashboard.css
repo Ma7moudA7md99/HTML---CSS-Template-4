@@ -594,6 +594,15 @@
 .table .tabled-content tr td img {
   height: 65px;
 }
+.table .tabled-content tr td img:nth-child(2) {
+  transform: translateX(-50%);
+}
+.table .tabled-content tr td img:nth-child(3) {
+  transform: translateX(-100%);
+}
+.table .tabled-content tr td img:nth-child(4) {
+  transform: translateX(-150%);
+}
 .table .tabled-content td.status-cell {
   text-align: center;
 }
