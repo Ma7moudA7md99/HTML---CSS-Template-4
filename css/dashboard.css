@@ -574,9 +574,9 @@
 .table .tabled-content th.name {
   width: 25%;
 }
-/* .table .tabled-content th.date {
+.table .tabled-content th.date {
   width: 15%;
-} */
+}
 .table .tabled-content th.client {
   width: 20%;
 }
