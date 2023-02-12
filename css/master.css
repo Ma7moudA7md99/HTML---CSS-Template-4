@@ -20,6 +20,10 @@ body {
 ul {
   list-style: none;
 }
+h1.section-title {
+  text-transform: capitalize;
+  margin: 10px 20px;
+}
 /* global classes */
 .active {
   background-color: #f6f6f6;
@@ -438,4 +442,89 @@ aside.main .links span:hover {
   color: #e2e2e2;
 }
 /* end tasks */
+/* start search */
+.grid-content .search {
+  text-align: left;
+  text-transform: capitalize;
+}
+.grid-content .search h2 {
+  margin: 10px 20px;
+}
+.grid-content .search ul {
+  position: relative;
+  margin: 40px 20px;
+}
+.grid-content .search ul:after,
+.grid-content .search ul::before {
+  position: absolute;
+  top: -15%;
+  color: #777;
+}
+.grid-content .search ul:after {
+  content: "search count";
+  right: 0;
+}
+.grid-content .search ul::before {
+  content: "keyword";
+  left: 0;
+}
+.grid-content .search ul li {
+  margin: 25px 0;
+  position: relative;
+}
+.grid-content .search ul li:after {
+  content: attr(data-count);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-20%);
+  padding: 4px 7px;
+  background-color: #eeeeee;
+  border-radius: 5px;
+}
+/* end search */
+/* start updates */
+.grid-content .uploads {
+  text-align: left;
+  text-transform: capitalize;
+}
+.grid-content .uploads h2 {
+  margin: 10px 20px;
+}
+.grid-content .uploads div {
+  height: 12%;
+  margin: 0 20px;
+  margin-top: 7px;
+  position: relative;
+}
+.grid-content .uploads div:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.grid-content .uploads div img {
+  height: 90%;
+  position: absolute;
+  left: 0;
+}
+.grid-content .uploads div h4,
+.grid-content .uploads div p {
+  margin-left: 50px;
+}
+.grid-content .uploads div h4 {
+  position: relative;
+}
+.grid-content .uploads div h4::after {
+  position: absolute;
+  content: attr(data-size);
+  top: 50%;
+  right: 0;
+  transform: translateY(-20%);
+  background-color: #eeeeee;
+  padding: 4px 7px;
+  border-radius: 5px;
+}
+.grid-content .uploads div p {
+  font-size: 0.8em;
+  color: #777;
+}
+/* end uploads */
 /* end dashboard */
