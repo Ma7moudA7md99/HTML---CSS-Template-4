@@ -576,11 +576,11 @@
 }
 /* .table .tabled-content th.date {
   width: 15%;
-}
+} */
 .table .tabled-content th.client {
-  width: 15%;
+  width: 20%;
 }
-.table .tabled-content th.price {
+/* .table .tabled-content th.price {
   width: 10%;
 }
 .table .tabled-content th.status {
