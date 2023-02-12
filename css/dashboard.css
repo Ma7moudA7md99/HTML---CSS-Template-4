@@ -592,7 +592,7 @@
   font-size: 1.2em;
 }
 .table .tabled-content tr td img {
-  height: 65px;
+  height: 50px;
 }
 .table .tabled-content tr td img:nth-child(2) {
   transform: translateX(-50%);
