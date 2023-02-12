@@ -580,10 +580,10 @@
 .table .tabled-content th.client {
   width: 20%;
 }
-/* .table .tabled-content th.price {
+.table .tabled-content th.price {
   width: 10%;
 }
-.table .tabled-content th.status {
+/* .table .tabled-content th.status {
   width: 15.7%;
 } */
 .table .tabled-content td {
