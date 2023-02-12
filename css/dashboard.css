@@ -1,0 +1,606 @@
+.dashboard {
+  margin: 30px 10px;
+}
+.grid-content {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
+  gap: 20px;
+}
+/* start box content   (686)*/
+.grid-content .box {
+  background-color: white;
+  box-shadow: 0 0 5px 1px #0000004f;
+  border-radius: var(--radius-div);
+  position: relative;
+  text-align: right;
+  height: 350px;
+  direction: ltr;
+}
+.grid-content .box .back {
+  position: relative;
+}
+.grid-content .box .back h2,
+.grid-content .box .back p {
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  text-transform: capitalize;
+}
+.grid-content .box .back p {
+  top: 40%;
+  left: 10%;
+  color: #777;
+}
+.grid-content .box .back img {
+  width: 100%;
+  z-index: -11;
+  border-radius: 20px;
+}
+.grid-content .box .profile-img img {
+  width: 13%;
+  z-index: 33;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.grid-content .box .statistics {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(140px, 1fr));
+  gap: 8px;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px 0;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 2;
+}
+.grid-content .box .statistics div {
+  width: 100%;
+}
+.grid-content .box .statistics p {
+  color: #777;
+}
+.grid-content .box button {
+  padding: 5px 10px;
+  background-color: #0075ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 8%;
+  right: 5%;
+  cursor: pointer;
+}
+/* start quick-draft (234)*/
+.grid-content .quick-draft {
+  text-align: left;
+}
+.grid-content .quick-draft p {
+  color: #777;
+  margin: 0 15px 15px;
+}
+.grid-content .quick-draft input,
+.grid-content .quick-draft textarea {
+  margin: 5px 10px;
+  width: 95%;
+  color: #777;
+  padding: 5px 10px;
+  max-width: 95%;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #eeeeee;
+}
+.grid-content .quick-draft textarea {
+  height: 150px;
+}
+/* end quick-draft */
+/* start yearly-targets (319)*/
+.grid-content .yearly-targets {
+  text-align: left;
+}
+.grid-content .yearly-targets div {
+  width: 95%;
+  margin: 15px 20px;
+  position: relative;
+}
+.grid-content .yearly-targets div p {
+  color: #777;
+  text-transform: capitalize;
+  position: absolute;
+  top: 10%;
+  left: 23%;
+}
+.grid-content .yearly-targets div p:nth-child(2) {
+  top: 45%;
+  color: black;
+}
+.grid-content .yearly-targets div div.icon {
+  margin: 0;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  align-self: center;
+  display: inline-block;
+}
+.grid-content .yearly-targets div.dollar div.icon {
+  background-color: #cce3ff;
+  color: var(--main-color);
+}
+.grid-content .yearly-targets div.dollar span.prog-holder {
+  background-color: #cce3ff;
+}
+.grid-content .yearly-targets div span.prog-holder span {
+  height: inherit;
+  display: block;
+  position: relative;
+}
+.grid-content .yearly-targets div span.prog-holder span::after {
+  content: attr(data-steps);
+  position: absolute;
+  background-color: inherit;
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: white;
+  top: -27px;
+  right: -13%;
+}
+.grid-content .yearly-targets div.dollar span.prog-holder span {
+  background-color: var(--main-color);
+}
+.grid-content .yearly-targets div.code div.icon {
+  background-color: #fdecce;
+  color: #f59e0b;
+}
+.grid-content .yearly-targets div.code span.prog-holder {
+  background-color: #fdecce;
+}
+.grid-content .yearly-targets div.code span.prog-holder span {
+  background-color: #f59e0b;
+  height: inherit;
+}
+.grid-content .yearly-targets div.user div.icon {
+  background-color: #d3f3df;
+  color: #22c55e;
+}
+.grid-content .yearly-targets div.user span.prog-holder {
+  background-color: #d3f3df;
+}
+.grid-content .yearly-targets div.user span.prog-holder span {
+  background-color: #22c55e;
+}
+.grid-content .yearly-targets div div.icon i {
+  font-size: 22px;
+  transform: translateY(120%);
+}
+.grid-content .yearly-targets div span.prog-holder {
+  display: inline-block;
+  width: 75%;
+  height: 3px;
+  transform: translate(1%, 50px);
+}
+/* end yearly-targets */
+/* start tactical statistics (361) */
+.grid-content .tactical {
+  text-align: left;
+}
+.grid-content .tactical p {
+  margin: 0 20px;
+  color: #777;
+  text-transform: capitalize;
+}
+.grid-content .tactical div {
+  width: 45%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px 5px;
+  text-align: center;
+}
+.grid-content .tactical div.one,
+.grid-content .tactical div.two {
+  margin-left: 13px;
+}
+.grid-content .tactical div i {
+  font-size: 25px;
+  margin: 10px;
+}
+.grid-content .tactical div i.fa-rectangle-list {
+  color: #f59e0b;
+}
+.grid-content .tactical div i.fa-spinner {
+  color: #0075ff;
+}
+.grid-content .tactical div i.fa-circle-check {
+  color: #22c55e;
+}
+.grid-content .tactical div i.fa-rectangle-xmark {
+  color: #f44336;
+}
+.grid-content .tactical div p {
+  font-size: 12px;
+  margin: 10px;
+}
+/* end tactical statistics */
+/* start news (394)*/
+.grid-content .news {
+  text-align: left;
+}
+.grid-content .news-container {
+  height: 20%;
+  margin: 6px 10px;
+  position: relative;
+  border-right: 1px solid #ccc;
+}
+.grid-content .news-container:last-child {
+  border-bottom: none;
+}
+.grid-content .news-container img {
+  height: 85%;
+  position: absolute;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.grid-content .news-container h5 {
+  margin: 5px 0;
+  font-size: 17px;
+}
+.grid-content .news-container p {
+  color: #777;
+  font-size: 12px;
+}
+.grid-content .news-container h5,
+.grid-content .news-container p {
+  margin-left: 110px;
+  text-transform: capitalize;
+}
+/* end news */
+/* start tasks (428)*/
+.grid-content .tasks {
+  text-align: left;
+}
+.grid-content .tasks div {
+  margin: 10px 20px;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  position: relative;
+}
+.grid-content .tasks div:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.grid-content .tasks div p {
+  color: #777;
+  font-size: 12px;
+}
+.grid-content .tasks div h4 {
+  margin-bottom: 5px;
+}
+.grid-content .tasks div i {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+.grid-content .tasks div.canceled {
+  text-decoration: line-through;
+  color: #b3b3b3;
+}
+.grid-content .tasks div.canceled p {
+  color: #e2e2e2;
+}
+/* end tasks */
+/* start search (466)*/
+.grid-content .search {
+  text-align: left;
+  text-transform: capitalize;
+}
+.grid-content .search ul {
+  position: relative;
+  margin: 40px 20px;
+}
+.grid-content .search ul:after,
+.grid-content .search ul::before {
+  position: absolute;
+  top: -15%;
+  color: #777;
+}
+.grid-content .search ul:after {
+  content: "search count";
+  right: 0;
+}
+.grid-content .search ul::before {
+  content: "keyword";
+  left: 0;
+}
+.grid-content .search ul li {
+  margin: 25px 0;
+  position: relative;
+}
+.grid-content .search ul li:after {
+  content: attr(data-count);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-20%);
+  padding: 4px 7px;
+  background-color: #eeeeee;
+  border-radius: 5px;
+}
+/* end search */
+/* start updates (507)*/
+.grid-content .uploads {
+  text-align: left;
+  text-transform: capitalize;
+}
+.grid-content .uploads div {
+  height: 12%;
+  margin: 0 20px;
+  margin-top: 7px;
+  position: relative;
+}
+.grid-content .uploads div:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.grid-content .uploads div img {
+  height: 90%;
+  position: absolute;
+  left: 0;
+}
+.grid-content .uploads div h4,
+.grid-content .uploads div p {
+  margin-left: 50px;
+}
+.grid-content .uploads div h4 {
+  position: relative;
+}
+.grid-content .uploads div h4::after {
+  position: absolute;
+  content: attr(data-size);
+  top: 50%;
+  right: 0;
+  transform: translateY(-20%);
+  background-color: #eeeeee;
+  padding: 4px 7px;
+  border-radius: 5px;
+}
+.grid-content .uploads div p {
+  font-size: 0.8em;
+  color: #777;
+}
+/* end uploads */
+/* start progress (544)*/
+.grid-content .progress {
+  text-align: left;
+  text-transform: capitalize;
+}
+.grid-content .progress ul {
+  margin: 0 60px;
+}
+.grid-content .progress ul li {
+  margin: 25px 0;
+  font-size: 18px;
+  position: relative;
+  cursor: pointer;
+}
+.grid-content .progress ul li::after,
+.grid-content .progress ul li::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 50%;
+  left: -9%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.grid-content .progress ul li:not(:last-child):after {
+  background-color: var(--main-color);
+}
+.grid-content .progress ul li::before {
+  height: 23px;
+  width: 23px;
+  background-color: transparent;
+  border: 3px solid var(--main-color);
+  left: -10.38%;
+}
+/* end progress */
+/* start reminders (575) */
+.grid-content .reminders {
+  text-align: left;
+  text-transform: capitalize;
+}
+.grid-content .reminders div {
+  margin: 0 90px;
+  height: 20%;
+  position: relative;
+}
+.grid-content .reminders div span {
+  position: absolute;
+  top: 15%;
+  left: -70px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.grid-content .reminders div span::before {
+  content: "";
+  background-color: inherit;
+  width: 3px;
+  height: 50px;
+  top: -70%;
+  left: 60px;
+  position: absolute;
+}
+.grid-content .reminders div p {
+  color: #777;
+}
+/* end reminders */
+/* start latest post (617) */
+.grid-content .latest-post {
+  text-align: left;
+  text-transform: capitalize;
+}
+.grid-content .latest-post .content {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+}
+.grid-content .latest-post .content .info {
+  position: relative;
+  margin: 40px 0;
+}
+.grid-content .latest-post .content .info img {
+  width: 10%;
+  position: absolute;
+  top: -10%;
+}
+.grid-content .latest-post .content .info h4,
+.grid-content .latest-post .content .info p {
+  margin-left: 60px;
+}
+.grid-content .latest-post .content .info h4 {
+  margin: 5px 60px;
+}
+.grid-content .latest-post .content .info p {
+  color: #777;
+  font-size: 0.8em;
+}
+.grid-content .latest-post .content .text {
+  line-height: 2;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.grid-content .latest-post .content .icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  color: #777;
+}
+/* end latest post */
+/* start social media (684)*/
+.grid-content .social-media {
+  text-align: left;
+  text-transform: capitalize;
+}
+.grid-content .social-media div {
+  height: 20%;
+  margin: 5px 20px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  position: relative;
+}
+.grid-content .social-media div::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  padding: 4px 7px;
+  transform: translateY(-50%);
+  border-radius: 5px;
+}
+.grid-content .social-media div.twitter {
+  color: #1da1f2;
+  background-color: #d2ecfc;
+}
+.grid-content .social-media div.twitter::before {
+  content: "follow";
+  background-color: #1da1f2;
+  color: #d2ecfc;
+}
+.grid-content .social-media div.facebook {
+  color: #1877f2;
+  background-color: #d1e4fc;
+}
+.grid-content .social-media div.facebook::before {
+  content: "like";
+  background-color: #1877f2;
+  color: #d1e4fc;
+}
+.grid-content .social-media div.youtube {
+  color: #ff0000;
+  background-color: #ffcccc;
+}
+.grid-content .social-media div.youtube::before {
+  content: "subscribe";
+  background-color: #ff0000;
+  color: #ffcccc;
+}
+.grid-content .social-media div.linkedin {
+  color: #0077b5;
+  background-color: #cce4f0;
+}
+.grid-content .social-media div.linkedin::before {
+  content: "follow";
+  background-color: #0077b5;
+  color: #cce4f0;
+}
+.grid-content .social-media div img {
+  height: 100%;
+  z-index: 5;
+}
+.grid-content .social-media div p {
+  margin: 22px 20px;
+  font-size: 1.2em;
+}
+/* end social media */
+/* end box content */
+/* start table content */
+.table {
+  margin: 30px 0;
+  width: 100%;
+  background-color: white;
+  border-radius: var(--radius-div);
+  box-shadow: 0 0 5px 1px #0000004f;
+}
+.table h1 {
+  padding: 10px;
+}
+.table .tabled-content {
+  text-transform: capitalize;
+}
+.table .tabled-content table {
+  padding: 20px;
+}
+.table .tabled-content th {
+  background-color: #eee;
+  outline: 1px solid #eee;
+  height: 50px;
+}
+.table .tabled-content th.name {
+  width: 25%;
+}
+.table .tabled-content th.date {
+  width: 15%;
+}
+.table .tabled-content th.client {
+  width: 15%;
+}
+.table .tabled-content th.price {
+  width: 10%;
+}
+.table .tabled-content th.status {
+  width: 15.7%;
+}
+.table .tabled-content td {
+  outline: 1px solid #eee;
+  padding: 0 10px;
+  font-size: 1.2em;
+}
+.table .tabled-content tr td img {
+  height: 65px;
+}
+.table .tabled-content td.status-cell {
+  text-align: center;
+}
+.table .tabled-content td.status-cell p {
+  width: fit-content;
+  padding: 4px 7px;
+  border-radius: 5px;
+  color: white;
+}
+/* end table content */

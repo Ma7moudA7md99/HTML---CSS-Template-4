@@ -15,6 +15,8 @@
     />
     <!-- font awesome -->
     <link rel="stylesheet" href="css/all.min.css" />
+    <!-- dashboard css file -->
+    <link rel="stylesheet" href="css/dashboard.css" />
     <!-- main css file -->
     <link rel="stylesheet" href="css/master.css" />
     <title>Git Work</title>
@@ -250,39 +252,43 @@
           </ul>
         </div>
         <div class="box reminders">
+          <h2>reminders</h2>
           <div class="remind">
-            <span><!-- #0075ff --></span>
+            <span style="background-color: #0075ff"><!-- #0075ff --></span>
             <h4>check my tasks list</h4>
             <p>28/09/2022 - 12:00am</p>
           </div>
           <div class="remind">
-            <span><!-- #22c55e --></span>
+            <span style="background-color: #22c55e"><!-- #22c55e --></span>
             <h4>check my projects</h4>
             <p>26/10/2022 - 12:00am</p>
           </div>
           <div class="remind">
-            <span><!-- #f59e0b --></span>
+            <span style="background-color: #f59e0b"><!-- #f59e0b --></span>
             <h4>call al my clients</h4>
             <p>05/11/2022 - 12:00am</p>
           </div>
           <div class="remind">
-            <span><!-- #f44336 --></span>
+            <span style="background-color: #f44336"><!-- #f44336 --></span>
             <h4>finish the development workshop</h4>
             <p>20/10/2022 - 12:00am</p>
           </div>
         </div>
         <div class="box latest-post">
-          <div class="info">
-            <img src="img/man.png" alt="" />
-            <h4>ahmed ahmed</h4>
-            <p>about 3 hours ago</p>
-          </div>
-          <div class="text">
-            <p>
-              yo cam fool all of the people some of the time, and some of the
-              people all of the time, but you can't fool all of the people all
-              of the time
-            </p>
+          <h2>latest post</h2>
+          <div class="content">
+            <div class="info">
+              <img src="img/man.png" alt="" />
+              <h4>ahmed ahmed</h4>
+              <p>about 3 hours ago</p>
+            </div>
+            <div class="text">
+              <p>
+                yo cam fool all of the people some of the time, and some of the
+                people all of the time, but you can't fool all of the people all
+                of the time
+              </p>
+            </div>
             <div class="icons">
               <div class="likes">
                 <i class="fa-regular fa-heart"></i>
@@ -296,6 +302,7 @@
           </div>
         </div>
         <div class="box social-media">
+          <h2>social media stats</h2>
           <div class="twitter">
             <img src="img/twitter.png" alt="" />
             <p>90K followers</p>
@@ -314,7 +321,94 @@
           </div>
         </div>
       </div>
-      <div class="full-content"></div>
+      <div class="table">
+        <h1 class="section-title">projects</h1>
+        <div class="tabled-content">
+          <table>
+            <tr>
+              <th class="name">name</th>
+              <th class="date">finish date</th>
+              <th class="client">client</th>
+              <th class="price">price</th>
+              <th class="team">team</th>
+              <th class="status">status</th>
+            </tr>
+            <tr>
+              <td>ministry wikipedia</td>
+              <td>10 may 2022</td>
+              <td>ministry</td>
+              <td>$5300</td>
+              <td>
+                <img src="img/member.png" alt="" />
+                <img src="img/member.png" alt="" />
+                <img src="img/member.png" alt="" />
+                <img src="img/member.png" alt="" />
+              </td>
+              <td class="status-cell">
+                <p style="background-color: #f59e0b">pending</p>
+              </td>
+              <!-- #f59e0b -->
+            </tr>
+            <tr>
+              <td>elzero shop</td>
+              <td>12 oct 2021</td>
+              <td>elzero company</td>
+              <td>$1500</td>
+              <td>
+                <img src="img/member.png" alt="" />
+                <img src="img/member.png" alt="" />
+                <img src="img/member.png" alt="" />
+              </td>
+              <td class="status-cell">
+                <p style="background-color: var(--main-color)">in progress</p>
+              </td>
+              <!-- --main-color -->
+            </tr>
+            <tr>
+              <td>bouba app</td>
+              <td>05 sep 2021</td>
+              <td>bouba</td>
+              <td>$800</td>
+              <td>
+                <img src="img/member.png" alt="" />
+                <img src="img/member.png" alt="" />
+              </td>
+              <td class="status-cell">
+                <p style="background-color: #22c55e">completed</p>
+              </td>
+              <!-- #22c55e -->
+            </tr>
+            <tr>
+              <td>mahmoud website</td>
+              <td>11 may 2021</td>
+              <td>mahmoud</td>
+              <td>$600</td>
+              <td>
+                <img src="img/member.png" alt="" />
+                <img src="img/member.png" alt="" />
+              </td>
+              <td class="status-cell">
+                <p style="background-color: #22c55e">completed</p>
+              </td>
+              <!-- #22c55e -->
+            </tr>
+            <tr>
+              <td>sayed website</td>
+              <td>24 may 2021</td>
+              <td>sayed</td>
+              <td>$300</td>
+              <td>
+                <img src="img/member.png" alt="" />
+                <img src="img/member.png" alt="" />
+              </td>
+              <td class="status-cell">
+                <p style="background-color: #f44336">rejected</p>
+              </td>
+              <!-- #f44336 -->
+            </tr>
+          </table>
+        </div>
+      </div>
     </section>
   </body>
 </html>
