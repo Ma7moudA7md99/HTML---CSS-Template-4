@@ -14,7 +14,7 @@
 body {
   font-family: "Noto Serif", serif;
   background-color: var(--back-color);
-  width: 85%;
+  width: 83%;
   direction: rtl;
   overflow-x: hidden;
 }
@@ -37,7 +37,8 @@ h2 {
 /* start main (aside) */
 aside.main {
   background-color: white;
-  width: 15%;
+  width: 17%;
+  max-width: 17%;
   height: 100%;
   position: fixed;
   top: 0;
