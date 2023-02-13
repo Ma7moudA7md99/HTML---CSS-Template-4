@@ -571,12 +571,12 @@
   height: 50px;
 }
 .table .tabled-content th.name {
-  width: 20%;
-  max-width: 20%;
+  width: 25%;
+  max-width: 25%;
 }
 .table .tabled-content th.date {
-  width: 14%;
-  max-width: 14%;
+  width: 15%;
+  max-width: 15%;
 }
 .table .tabled-content th.client {
   width: 15%;
