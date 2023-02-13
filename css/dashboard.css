@@ -571,19 +571,24 @@
   height: 50px;
 }
 .table .tabled-content th.name {
-  width: 25%;
+  width: 20%;
+  max-width: 20%;
 }
 .table .tabled-content th.date {
   width: 14%;
+  max-width: 14%;
 }
 .table .tabled-content th.client {
-  width: 16%;
+  width: 15%;
+  max-width: 15%;
 }
 .table .tabled-content th.price {
   width: 10%;
+  max-width: 10%;
 }
 .table .tabled-content th.status {
   width: 15%;
+  max-width: 15%;
 }
 .table .tabled-content td {
   outline: 1px solid #eee;
@@ -591,7 +596,7 @@
   font-size: 1.2em;
 }
 .table .tabled-content tr td img {
-  height: 50px;
+  max-width: 50px;
 }
 .table .tabled-content tr td img:nth-child(2) {
   transform: translateX(-50%);
