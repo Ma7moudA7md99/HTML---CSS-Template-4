@@ -1,0 +1,87 @@
+/* start toggle switch */
+label.checkbox-toggle {
+  position: absolute;
+  right: 10px;
+  top: 28%;
+  transition: 0.3s;
+}
+label.checkbox-toggle .checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+}
+.toggle {
+  width: 72px;
+  height: 25px;
+  background-color: red;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+.toggle::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f00d";
+  position: absolute;
+  top: 1.5px;
+  left: 1.5px;
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+label.checkbox-toggle .checkbox:checked + .toggle {
+  background-color: var(--main-color);
+}
+label.checkbox-toggle .checkbox:checked + .toggle::before {
+  left: 48px;
+  content: "\f00c";
+}
+/* end toggle switch */
+.settings-section {
+  margin: 110px 20px;
+  display: block;
+  text-transform: capitalize;
+}
+.settings-section .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+}
+.settings-section .content .box {
+  background-color: white;
+  box-shadow: 0 0 5px 1px #0000004f;
+  border-radius: var(--radius-div);
+  position: relative;
+  height: 350px;
+}
+.settings-section .content .site-control {
+  position: relative;
+}
+.settings-section .content .site-control p:not(p.head) {
+  color: #777;
+  font-size: 13px;
+  margin: 10px 20px;
+}
+.settings-section .content .site-control p.head {
+  font-size: 18px;
+  margin: 10px 20px;
+}
+.settings-section .content .site-control p.txt {
+  padding-bottom: 20px;
+}
+.settings-section .content .site-control textarea {
+  margin: 10px 20px;
+  padding: 10px;
+  max-width: 90%;
+  width: 90%;
+  max-height: 170px;
+  height: 170px;
+  color: #777;
+  border: 1px solid #ccc;
+}

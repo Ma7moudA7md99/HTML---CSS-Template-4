@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- dashboard css file -->
     <link rel="stylesheet" href="css/dashboard.css" />
+    <!-- settings css file -->
+    <link rel="stylesheet" href="css/settings.css" />
     <!-- main css file -->
     <link rel="stylesheet" href="css/master.css" />
     <title>Git Work</title>
@@ -434,7 +436,124 @@
         </div>
       </div>
     </section>
-    <section class="settings-section" id="settings-section"></section>
+    <section class="settings-section" id="settings-section">
+      <div class="content">
+        <div class="box site-control">
+          <h2>site control</h2>
+          <p class="txt">control the website if there is maintenance</p>
+          <p class="head">website control</p>
+          <p>open / close website and type the reason</p>
+          <label class="checkbox-toggle">
+            <input type="checkbox" class="checkbox" />
+            <div class="toggle"></div>
+          </label>
+          <textarea
+            class="close-text"
+            placeholder="Close Message Content"
+          ></textarea>
+        </div>
+        <div class="box general-info">
+          <h2>general info</h2>
+          <p>general information about your account</p>
+          <div class="inputs">
+            <label for="fname">first name</label>
+            <input type="text" name="fname" class="fname" />
+            <label for="lname">last name</label>
+            <input type="text" name="lname" class="lname" />
+            <label for="email">email</label>
+            <input type="email" name="email" class="email" />
+          </div>
+        </div>
+        <div class="box security-info">
+          <h2>security info</h2>
+          <p>security information about your account</p>
+          <div class="password">
+            <p>password</p>
+            <p>last change on 25/10/2021</p>
+            <button>change</button>
+          </div>
+          <div class="two-factor">
+            <p>two-factor authentication</p>
+            <p>enable/disable the feature</p>
+            <label class="checkbox-toggle">
+              <input type="checkbox" class="checkbox" />
+              <div class="toggle"></div>
+            </label>
+          </div>
+          <div class="devices">
+            <p>devices</p>
+            <p>check the login devices list</p>
+            <button>devices</button>
+          </div>
+        </div>
+        <div class="box social-info">
+          <h2>social info</h2>
+          <p>social media information</p>
+          <div class="inpts">
+            <input
+              type="text"
+              class="twitter-username"
+              placeholder="Twitter Username"
+            />
+            <input
+              type="text"
+              class="facebook-username"
+              placeholder="Facebook Username"
+            />
+            <input
+              type="text"
+              class="linkedin-username"
+              placeholder="Linkedin Username"
+            />
+            <input
+              type="text"
+              class="youtube-username"
+              placeholder="Youtube Username"
+            />
+          </div>
+        </div>
+        <div class="box widgets-control">
+          <h2>widgets control</h2>
+          <p>show/hide widgets</p>
+          <label for="quick-draft">quick draft</label>
+          <label for="yearly-targets">yearly targets</label>
+          <label for="tickets-statistics">tickets statistics</label>
+          <label for="latest-news">latest news</label>
+          <label for="latest-tasks">latest tasks</label>
+          <label for="search-items">search items</label>
+          <input type="checkbox" class="quick-draft" />
+          <input type="checkbox" class="yearly-targets" />
+          <input type="checkbox" class="tickets-statistics" />
+          <input type="checkbox" class="latest-news" />
+          <input type="checkbox" class="latest-tasks" />
+          <input type="checkbox" class="search-items" />
+        </div>
+        <div class="box backup-manager">
+          <h2>backup manager</h2>
+          <p>control backup time and location</p>
+          <div class="time">
+            <label for="daily">daily</label>
+            <label for="weekly">weekly</label>
+            <label for="monthly">monthly</label>
+            <input type="radio" class="daily" />
+            <input type="radio" class="weekly" />
+            <input type="radio" class="monthly" />
+          </div>
+          <div class="location">
+            <i class="fa-solid fa-hard-drive"></i>
+            <p>mega man</p>
+          </div>
+          <div class="location">
+            <i class="fa-solid fa-hard-drive"></i>
+            <p>zero</p>
+          </div>
+          <div class="location">
+            <i class="fa-solid fa-hard-drive"></i>
+            <p>sigma</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="profile-section" id="profile-section"></section>
     <section class="projects-section" id="projects-section"></section>
     <section class="courses-section" id="courses-section"></section>
