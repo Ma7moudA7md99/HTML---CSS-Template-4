@@ -457,26 +457,42 @@
           <p>general information about your account</p>
           <div class="inputs">
             <label for="fname">first name</label>
-            <input type="text" name="fname" class="fname" />
+            <input
+              type="text"
+              name="fname"
+              class="fname"
+              placeholder="First Name"
+            />
             <label for="lname">last name</label>
-            <input type="text" name="lname" class="lname" />
+            <input
+              type="text"
+              name="lname"
+              class="lname"
+              placeholder="Last Name"
+            />
             <label for="email">email</label>
-            <input type="email" name="email" class="email" />
+            <input
+              type="email"
+              name="email"
+              class="email"
+              placeholder="Email"
+            />
+            <span class="change">change</span>
           </div>
         </div>
         <div class="box security-info">
           <h2>security info</h2>
           <p>security information about your account</p>
           <div class="password">
-            <p>password</p>
+            <p class="title">password</p>
             <p>last change on 25/10/2021</p>
             <button>change</button>
           </div>
           <div class="two-factor">
-            <p>two-factor authentication</p>
+            <p class="title">two-factor authentication</p>
             <p>enable/disable the feature</p>
             <label class="checkbox-toggle">
-              <input type="checkbox" class="checkbox" />
+              <input type="checkbox" class="checkbox" checked />
               <div class="toggle"></div>
             </label>
           </div>
@@ -495,59 +511,81 @@
               class="twitter-username"
               placeholder="Twitter Username"
             />
+            <span><i class="fa-brands fa-twitter"></i></span>
             <input
               type="text"
               class="facebook-username"
               placeholder="Facebook Username"
             />
+            <span><i class="fa-brands fa-facebook-f"></i></span>
             <input
               type="text"
               class="linkedin-username"
               placeholder="Linkedin Username"
             />
+            <span><i class="fa-brands fa-linkedin-in"></i></span>
             <input
               type="text"
               class="youtube-username"
               placeholder="Youtube Username"
             />
+            <span><i class="fa-brands fa-youtube"></i></span>
           </div>
         </div>
         <div class="box widgets-control">
           <h2>widgets control</h2>
           <p>show/hide widgets</p>
-          <label for="quick-draft">quick draft</label>
-          <label for="yearly-targets">yearly targets</label>
-          <label for="tickets-statistics">tickets statistics</label>
-          <label for="latest-news">latest news</label>
-          <label for="latest-tasks">latest tasks</label>
-          <label for="search-items">search items</label>
-          <input type="checkbox" class="quick-draft" />
-          <input type="checkbox" class="yearly-targets" />
-          <input type="checkbox" class="tickets-statistics" />
-          <input type="checkbox" class="latest-news" />
-          <input type="checkbox" class="latest-tasks" />
-          <input type="checkbox" class="search-items" />
+          <div class="contain">
+            <input type="checkbox" id="quick-draft" checked />
+            <label for="quick-draft">quick draft</label>
+          </div>
+          <div class="contain">
+            <input type="checkbox" id="yearly-targets" checked />
+            <label for="yearly-targets">yearly targets</label>
+          </div>
+          <div class="contain">
+            <input type="checkbox" id="tickets-statistics" checked />
+            <label for="tickets-statistics">tickets statistics</label>
+          </div>
+          <div class="contain">
+            <input type="checkbox" id="latest-news" checked />
+            <label for="latest-news">latest news</label>
+          </div>
+          <div class="contain">
+            <input type="checkbox" id="latest-tasks" />
+            <label for="latest-tasks">latest tasks</label>
+          </div>
+          <div class="contain">
+            <input type="checkbox" id="search-items" checked />
+            <label for="search-items">search items</label>
+          </div>
         </div>
         <div class="box backup-manager">
           <h2>backup manager</h2>
           <p>control backup time and location</p>
           <div class="time">
-            <label for="daily">daily</label>
-            <label for="weekly">weekly</label>
-            <label for="monthly">monthly</label>
-            <input type="radio" class="daily" />
-            <input type="radio" class="weekly" />
-            <input type="radio" class="monthly" />
+            <div>
+              <input type="radio" id="daily" name="time" checked />
+              <label for="daily">daily</label>
+            </div>
+            <div>
+              <input type="radio" id="weekly" name="time" />
+              <label for="weekly">weekly</label>
+            </div>
+            <div>
+              <input type="radio" id="monthly" name="time" />
+              <label for="monthly">monthly</label>
+            </div>
           </div>
-          <div class="location">
+          <div class="location one" onclick="one()">
             <i class="fa-solid fa-hard-drive"></i>
             <p>mega man</p>
           </div>
-          <div class="location">
+          <div class="location two active" onclick="two()">
             <i class="fa-solid fa-hard-drive"></i>
             <p>zero</p>
           </div>
-          <div class="location">
+          <div class="location three" onclick="three()">
             <i class="fa-solid fa-hard-drive"></i>
             <p>sigma</p>
           </div>
@@ -563,4 +601,21 @@
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    function one() {
+      $("div.location.one").addClass("active");
+      $("div.location.two").removeClass("active");
+      $("div.location.three").removeClass("active");
+    }
+    function two() {
+      $("div.location.one").removeClass("active");
+      $("div.location.two").addClass("active");
+      $("div.location.three").removeClass("active");
+    }
+    function three() {
+      $("div.location.one").removeClass("active");
+      $("div.location.two").removeClass("active");
+      $("div.location.three").addClass("active");
+    }
+  </script>
 </html>

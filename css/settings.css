@@ -1,7 +1,10 @@
+input:focus {
+  outline: 1px solid var(--main-color);
+}
 /* start toggle switch */
 label.checkbox-toggle {
   position: absolute;
-  right: 10px;
+  right: 6%;
   top: 28%;
   transition: 0.3s;
 }
@@ -20,8 +23,8 @@ label.checkbox-toggle .checkbox {
 }
 .toggle::before {
   font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  content: "\f00d";
+  font-weight: 500;
+  content: "\f5b4";
   position: absolute;
   top: 1.5px;
   left: 1.5px;
@@ -40,7 +43,8 @@ label.checkbox-toggle .checkbox:checked + .toggle {
 }
 label.checkbox-toggle .checkbox:checked + .toggle::before {
   left: 48px;
-  content: "\f00c";
+  font-weight: 500;
+  content: "\f5b8";
 }
 /* end toggle switch */
 .settings-section {
@@ -84,4 +88,157 @@ label.checkbox-toggle .checkbox:checked + .toggle::before {
   height: 170px;
   color: #777;
   border: 1px solid #ccc;
+}
+.settings-section .content .general-info p {
+  margin: 10px 20px;
+  color: #777;
+}
+.settings-section .content .general-info .inputs {
+  width: 100%;
+  margin: 10px 20px;
+}
+.settings-section .content .general-info .inputs label {
+  display: block;
+  padding: 10px 0;
+  color: #777;
+}
+.settings-section .content .general-info .inputs input {
+  position: relative;
+  width: 90%;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 5px;
+  color: #777;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+}
+.settings-section .content .general-info .inputs input[type="email"] {
+  width: 70%;
+}
+.settings-section .content .general-info .inputs span {
+  color: var(--main-color);
+  margin-left: 10px;
+  cursor: pointer;
+}
+.settings-section .content .security-info {
+  position: relative;
+}
+.settings-section .content .security-info p {
+  margin: 10px 20px;
+  color: #777;
+}
+.settings-section .content .security-info p.title {
+  color: black;
+  font-size: 1.2em;
+}
+.settings-section .content .security-info div:not(.toggle) {
+  border-bottom: 1px solid #ccc;
+  width: 90%;
+  margin: 20px;
+  position: relative;
+}
+.settings-section .content .security-info div button {
+  position: absolute;
+  background-color: var(--main-color);
+  border: none;
+  color: white;
+  padding: 4px 7px;
+  border-radius: 5px;
+  top: 10px;
+  right: 6px;
+  cursor: pointer;
+}
+.settings-section .content .security-info div label {
+  right: 6px;
+  top: -10px;
+}
+.settings-section .content .social-info p {
+  color: #777;
+  margin: 10px 20px;
+}
+
+.settings-section .content .social-info input {
+  width: 90%;
+  margin: 10px 20px;
+  height: 40px;
+  padding: 0 40px;
+  border-radius: 5px;
+  color: #777;
+  border: 1px solid #ccc;
+}
+.settings-section .content .social-info span {
+  position: absolute;
+  left: 30px;
+  font-size: 20px;
+  margin-top: 20px;
+  color: #777;
+  transition: 0s;
+}
+.settings-section .content .social-info input:focus + span {
+  color: var(--main-color);
+}
+.settings-section .content .widgets-control p {
+  color: #777;
+  margin: 10px 20px;
+}
+.settings-section .content .widgets-control div {
+  margin: 20px 30px;
+  font-size: 20px;
+}
+.settings-section .content .widgets-control div label {
+  margin-left: 5px;
+  cursor: pointer;
+}
+.settings-section .content .widgets-control div input {
+  width: 0.7em;
+  height: 0.7em;
+}
+.settings-section .content .backup-manager p {
+  color: #777;
+  margin: 10px 20px;
+}
+.settings-section .content .backup-manager div {
+  margin: 10px 20px;
+}
+.settings-section .content .backup-manager div label {
+  cursor: pointer;
+  margin-left: 5px;
+}
+.active {
+  color: var(--main-color);
+  outline: 2px solid var(--main-color);
+}
+.settings-section .content .backup-manager div.location {
+  border: 1px solid #ccc;
+  display: inline-block;
+  width: 29%;
+  height: 29%;
+  border-radius: 15px;
+  margin: 20px 5px;
+  transform: translateX(12px);
+  text-align: center;
+  cursor: pointer;
+}
+.settings-section .content .backup-manager div.location i {
+  font-size: 20px;
+  color: inherit;
+  margin-top: 30px;
+}
+.settings-section .content .backup-manager div.location p {
+  color: inherit;
+}
+/* responsive */
+@media (max-width: 426px) {
+  .settings-section .content {
+    grid-template-columns: repeat(auto-fill, minmax(385px, 1fr));
+  }
+  .settings-section .content .social-info span {
+    transform: translateY(-62px);
+  }
+  .settings-section .content .backup-manager div.location {
+    margin: 3px;
+  }
+  .settings-section .content .backup-manager div.location.one {
+    transform: translate(11px, 18.5px);
+  }
 }
