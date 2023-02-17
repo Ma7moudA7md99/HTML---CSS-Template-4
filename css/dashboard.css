@@ -624,7 +624,7 @@
 /* start responsive */
 @media (max-width: 376px) {
   .grid-content {
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
   .grid-content .box .statistics {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));

@@ -22,10 +22,10 @@ ul {
 }
 h1.section-title {
   text-transform: capitalize;
-  margin: 15px 30px;
+  margin: 20px 10px;
   position: relative;
   border-bottom: 5px solid white;
-  width: 13%;
+  width: 190px;
   padding-bottom: 10px;
 }
 h1.section-title::before {
@@ -64,53 +64,6 @@ h2 {
   margin: 10px 20px;
   text-transform: capitalize;
 }
-/* start toggle switch */
-label.checkbox-toggle {
-  position: absolute;
-  right: 6%;
-  top: 28%;
-  transition: 0.3s;
-}
-label.checkbox-toggle .checkbox {
-  appearance: none;
-  -webkit-appearance: none;
-}
-.toggle {
-  width: 72px;
-  height: 25px;
-  background-color: red;
-  border-radius: 15px;
-  cursor: pointer;
-  position: relative;
-  transition: 0.3s;
-}
-.toggle::before {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 500;
-  content: "\f5b4";
-  position: absolute;
-  top: 1.5px;
-  left: 1.5px;
-  width: 22px;
-  height: 22px;
-  background-color: white;
-  border-radius: 50%;
-  transition: 0.3s;
-  font-size: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-label.checkbox-toggle .checkbox:checked + .toggle {
-  background-color: var(--main-color);
-}
-label.checkbox-toggle .checkbox:checked + .toggle::before {
-  left: 48px;
-  font-weight: 500;
-  content: "\f5b8";
-}
-/* end toggle switch */
-
 /* global classes */
 .cont {
   z-index: 2;
