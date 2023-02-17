@@ -242,3 +242,41 @@ label.checkbox-toggle .checkbox:checked + .toggle::before {
     transform: translate(11px, 18.5px);
   }
 }
+@media (max-width: 376px) {
+  .settings-section .content {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .settings-section .content .social-info span {
+    transform: translateY(-62px);
+  }
+  .settings-section .content .backup-manager div.location {
+    margin: 3px;
+  }
+  .settings-section .content .backup-manager div.location.one {
+    transform: translate(11px, 18.5px);
+  }
+  .toggle {
+    width: 60px;
+  }
+  label.checkbox-toggle {
+    right: 2%;
+    top: 22%;
+  }
+  label.checkbox-toggle .checkbox:checked + .toggle::before {
+    left: 37px;
+  }
+  .settings-section .content .general-info .inputs span {
+    margin-left: 0;
+  }
+  .settings-section .content .security-info div label {
+    top: 8px;
+    right: -2px;
+  }
+  .settings-section .content .security-info div button {
+    top: -1px;
+    right: -2px;
+  }
+  .settings-section .content p {
+    margin: 10px 0;
+  }
+}
