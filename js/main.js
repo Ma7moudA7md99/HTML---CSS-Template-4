@@ -118,3 +118,19 @@ $("i.fa-bars-staggered").click(() => {
   $("i.fa-bars").css("display", "block");
   $("i.fa-bars-staggered").css("display", "none");
 });
+// settings backup control
+function one() {
+  $("div.location.one").addClass("active");
+  $("div.location.two").removeClass("active");
+  $("div.location.three").removeClass("active");
+}
+function two() {
+  $("div.location.one").removeClass("active");
+  $("div.location.two").addClass("active");
+  $("div.location.three").removeClass("active");
+}
+function three() {
+  $("div.location.one").removeClass("active");
+  $("div.location.two").removeClass("active");
+  $("div.location.three").addClass("active");
+}
