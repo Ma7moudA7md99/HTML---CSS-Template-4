@@ -1,7 +1,7 @@
 .dashboard-section {
   margin: 110px 10px;
   transition: 1s;
-  display: block;
+  display: none;
 }
 .grid-content {
   display: grid;
@@ -11,7 +11,7 @@
 /* start box content   (686)*/
 .grid-content .box {
   background-color: white;
-  box-shadow: 0 0 5px 1px #0000004f;
+  box-shadow: var(--shadow);
   border-radius: var(--radius-div);
   position: relative;
   text-align: right;
@@ -558,7 +558,7 @@
   width: 100%;
   background-color: white;
   border-radius: var(--radius-div);
-  box-shadow: 0 0 5px 1px #0000004f;
+  box-shadow: var(--shadow);
 }
 .table h1 {
   padding: 10px;

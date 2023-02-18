@@ -3,6 +3,7 @@
   --back-color: #f1f5f9;
   --main-color: #0075ff;
   --radius-div: 20px;
+  --shadow: 0 0 5px 1px #0000004f;
 }
 * {
   margin: 0;
