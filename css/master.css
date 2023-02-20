@@ -28,6 +28,7 @@ h1.section-title {
   border-bottom: 5px solid white;
   width: 190px;
   padding-bottom: 10px;
+  letter-spacing: 2px;
 }
 h1.section-title::before {
   position: absolute;
@@ -61,14 +62,15 @@ h1.title::after {
   transform: translateX(-50%);
   box-shadow: 0 0 0px 2px white;
 }
+h1.sec-title {
+  text-transform: capitalize;
+  margin: 0px 10px;
+}
 h2 {
   margin: 10px 20px;
   text-transform: capitalize;
 }
 /* global classes */
-.cont {
-  z-index: 2;
-}
 /* gg */
 /* start main (aside) */
 aside.main {
