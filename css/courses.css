@@ -1,0 +1,41 @@
+.courses-section {
+  margin: 110px 10px;
+  transition: 1s;
+  display: block;
+  text-transform: capitalize;
+}
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.courses-container .box {
+  background-color: white;
+  border-radius: var(--radius-div);
+  box-shadow: var(--shadow);
+  height: 500px;
+}
+.courses-container .box .content {
+  position: relative;
+  width: 100%;
+}
+.courses-container .box .content img.profile {
+  position: absolute;
+  width: 20%;
+  border-radius: 50%;
+  border: 1px solid white;
+  top: 5%;
+  left: 5%;
+}
+.courses-container .box .content img:not(img.profile) {
+  width: 100%;
+  border-top-right-radius: var(--radius-div);
+  border-top-left-radius: var(--radius-div);
+}
+.courses-container .box .content p {
+  margin: 10px;
+  line-height: 1.5;
+}
+.courses-container .box .content p.title {
+  color: black;
+}
