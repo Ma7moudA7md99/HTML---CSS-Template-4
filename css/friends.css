@@ -1,0 +1,165 @@
+.friends-section {
+  margin: 110px 10px;
+  transition: 1s;
+  display: block;
+  text-transform: capitalize;
+}
+.friends-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.friends-content .box {
+  background-color: white;
+  border-radius: var(--radius-div);
+  box-shadow: var(--shadow);
+  height: 480px;
+  position: relative;
+}
+.friends-content .box i {
+  background-color: #eee;
+  padding: 7px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+.friends-content .box i:last-of-type {
+  left: 40px;
+}
+.friends-content .box .img-content {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+.friends-content .box .img-content p.name {
+  color: black;
+  font-size: 1.2em;
+}
+
+.friends-content .box img {
+  width: 50%;
+  border-radius: 50%;
+  margin: 70px;
+  margin-bottom: 0;
+}
+.friends-content .box .info-content {
+  border-bottom: 1px solid #ccc;
+}
+.friends-content .box .info-content p {
+  color: black;
+  margin-left: 40px;
+  position: relative;
+}
+.friends-content .box .info-content p::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f118";
+  position: absolute;
+  font-weight: 400;
+  left: -30px;
+}
+.friends-content .box .info-content p.projects-p::before {
+  content: "\f542";
+  font-weight: 900;
+}
+.friends-content .box .info-content p.articles-p::before {
+  content: "\f1ea";
+}
+.friends-content .box .control {
+  margin: 10px 0;
+  text-align: center;
+}
+.friends-content .box .control span {
+  display: inline-block;
+  color: #777;
+  margin: 10px 5px;
+  font-size: 0.8em;
+}
+.friends-content .box .control .btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+.friends-content .box .control button {
+  text-transform: capitalize;
+  height: 25px;
+  padding: 0 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+.friends-content .box .control button.profile-btn {
+  background-color: var(--main-color);
+  animation: btn1Anime 2s infinite;
+}
+.friends-content .box .control button.remove-btn {
+  animation: btn2Anime 2s infinite;
+  background-color: #f44336;
+}
+.friends-content .box:hover .control button {
+  animation: none;
+}
+@media (max-width: 1025px) {
+  .friends-content .box {
+    height: 500px;
+  }
+}
+@media (max-width: 769px) {
+  .friends-content .box {
+    height: 500px;
+  }
+  .friends-content .box i {
+    left: 0;
+  }
+  .friends-content .box i:last-of-type {
+    left: 40px;
+  }
+}
+@media (max-width: 426px) {
+  .friends-content .box {
+    height: 530px;
+  }
+}
+@media (max-width: 376px) {
+  .friends-content .box {
+    height: 500px;
+  }
+}
+@media (max-width: 321px) {
+  .friends-content .box {
+    height: 470px;
+  }
+  .friends-content .box .control {
+    text-align: center;
+  }
+  .friends-content .box .control span {
+    display: block;
+    margin: 10px 0;
+  }
+  .friends-content .box .control .btn {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@keyframes btn1Anime {
+  0% {
+    transform: translate(20px);
+  }
+  50% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(20px);
+  }
+}
+@keyframes btn2Anime {
+  0% {
+    transform: translate(-20px);
+  }
+  50% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-20px);
+  }
+}
