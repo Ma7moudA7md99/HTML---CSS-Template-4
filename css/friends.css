@@ -16,6 +16,15 @@
   height: 480px;
   position: relative;
 }
+.friends-content .box.vip::before {
+  content: "VIP";
+  position: absolute;
+  color: #fdecce;
+  font-size: 70px;
+  right: 20px;
+  bottom: 100px;
+  transform: rotate(20deg);
+}
 .friends-content .box i {
   background-color: #eee;
   padding: 7px;
