@@ -1,0 +1,125 @@
+.plans-section {
+  margin: 110px 10px;
+  transition: 1s;
+  display: none;
+  text-transform: capitalize;
+}
+.plans-section .plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+}
+.plans-section .box {
+  background-color: white;
+  border-radius: var(--radius-div);
+  box-shadow: var(--shadow);
+  /* height: 480px; */
+  position: relative;
+}
+.plans-section .box .salary {
+  text-align: center;
+  color: white;
+}
+.plans-section .free .salary {
+  background-color: #22c55e;
+  margin: 10px;
+  outline: 3px solid #22c55e;
+  border: 3px solid white;
+}
+.plans-section .basic .salary {
+  background-color: var(--main-color);
+  margin: 10px;
+  outline: 3px solid var(--main-color);
+  border: 3px solid white;
+}
+.plans-section .premium .salary {
+  background-color: #f59e0b;
+  margin: 10px;
+  outline: 3px solid #f59e0b;
+  border: 3px solid white;
+}
+.plans-section .box .salary h1 {
+  position: relative;
+  font-size: 2.5em;
+}
+.plans-section .box .salary h2 {
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+.plans-section .box .salary h1::before {
+  position: absolute;
+  content: "\24";
+  top: -50%;
+  left: 39%;
+  font-size: 22px;
+}
+.plans-section .box .description {
+  margin: 10px;
+}
+.plans-section .box .description ul li {
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  padding-left: 25px;
+}
+.plans-section .box .description ul li:after {
+  position: absolute;
+  content: "\21";
+  top: 50%;
+  right: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #777;
+  color: white;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plans-section .box .description ul li::before {
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+}
+.plans-section .box .description ul li.available::before {
+  content: "\f00c";
+  color: #22c55e;
+}
+.plans-section .box .description ul li.not-available::before {
+  content: "\f00d";
+  font-weight: 900;
+  color: #f44336;
+}
+.plans-section .box button {
+  padding: 4px 7px;
+  margin: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.plans-section .box.free button {
+  background-color: #22c55e;
+}
+.plans-section .box.basic button {
+  background-color: var(--main-color);
+}
+.plans-section .box p {
+  margin: 20px 0;
+  text-align: center;
+}
+@media (max-width: 376px) {
+  .plans-section .plans {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+@media (max-width: 321px) {
+  .plans-section .plans {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
