@@ -134,3 +134,8 @@ function three() {
   $("div.location.two").removeClass("active");
   $("div.location.three").addClass("active");
 }
+// statices-player movement
+$(".statices-player").click(function () {
+  $(this).toggleClass("clicked");
+  $(".statices").toggleClass("clicked-statices");
+});

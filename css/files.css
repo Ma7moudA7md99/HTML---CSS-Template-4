@@ -1,0 +1,134 @@
+.files-section {
+  margin: 110px 10px;
+  transition: 1s;
+  display: block;
+  text-transform: capitalize;
+}
+.files-grid-content {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+.box {
+  background-color: white;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-div);
+  position: relative;
+}
+.files-grid-content .content {
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 1px solid #ccc;
+}
+.files-grid-content .content img {
+  width: 30%;
+}
+.files-grid-content .content p.title {
+  color: black;
+  font-size: 0.9em;
+}
+.files-grid-content .files-info {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  font-size: 0.9em;
+}
+.statices-player {
+  width: 70px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  display: none;
+  transition: 1s;
+}
+.statices-player img {
+  height: 90%;
+  margin-left: 5px;
+}
+.statices {
+  width: 19%;
+  position: fixed;
+  right: 10px;
+  top: 180px;
+  height: 370px;
+}
+.statices .content {
+  padding: 5px 0;
+}
+.statices div:not(.content) {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  text-align: center;
+  position: relative;
+}
+.statices div::before {
+  content: attr(data-size);
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  color: #777;
+  transform: translateY(-50%);
+}
+.statices div img {
+  width: 20%;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+.statices div p.title {
+  color: black;
+}
+@media (max-width: 1200px) {
+  .statices {
+    width: 24%;
+  }
+  .files-grid-content {
+    width: 75%;
+  }
+}
+@media (max-width: 935px) {
+  .statices {
+    width: 35%;
+    right: -40%;
+    margin: 20px 10px;
+    transition: 1s;
+  }
+  .statices-player {
+    display: block;
+    position: fixed;
+    right: -15px;
+    top: 200px;
+    cursor: pointer;
+    filter: grayscale(1);
+  }
+  .statices div img {
+    width: 15%;
+  }
+  .files-grid-content {
+    width: 100%;
+  }
+}
+.clicked {
+  right: 35%;
+  filter: none;
+}
+.clicked-statices {
+  right: 0%;
+}
+@media (max-width: 426px) {
+  .statices {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 20px 0;
+    width: 100%;
+  }
+  .statices-player {
+    display: none;
+  }
+}
