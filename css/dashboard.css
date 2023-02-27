@@ -1,7 +1,7 @@
 .dashboard-section {
   margin: 110px 10px;
   transition: 1s;
-  display: none;
+  display: block;
 }
 .grid-content {
   display: grid;
